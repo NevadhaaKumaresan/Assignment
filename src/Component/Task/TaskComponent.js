@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './TaskComponent.css';
-import { Button, Row, Col, Table } from 'antd';
+import { Row, Table } from 'antd';
 import 'antd/dist/antd.css';
 import { DeleteTwoTone, CheckCircleTwoTone } from '@ant-design/icons';
 
@@ -8,6 +8,7 @@ export const TaskComponent = (props) => {
 
     useEffect(() => {
         props.taskData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       },[]);  
       const pendingColumns = [
         {
@@ -51,12 +52,10 @@ export const TaskComponent = (props) => {
       ];
 
       const handleDelete = (data) => {
-        console.log("**************",data);
         props.deleteTask(props.taskDatas, data);
      }
 
      const handleComplete = (data) => {
-      console.log("comp**",data);
       props.moveToComplete(props.taskDatas, data)
      }
     
@@ -66,7 +65,7 @@ export const TaskComponent = (props) => {
     <div className="taskContainer">
     <div className="taskContainerBorder">
       <div className="displayHeader">
-        <div className="displayHeaderSize">Pending Tasks</div>
+        <div className="displayHeaderSize boldHeader">Pending Tasks</div>
         <div className="circle">{props.taskDatas.filter( data => data.completed === false).length}</div>
       </div>
         <Row>
@@ -87,7 +86,7 @@ export const TaskComponent = (props) => {
             </Col>
         </Row> */}
          <div className="displayHeader">
-        <div className="displayHeaderSize">Completed Tasks</div>
+        <div className="displayHeaderSize boldHeader">Completed Tasks</div>
         <div className="circle">{props.taskDatas.filter( data => data.completed === true).length}</div>
       </div>
       <Row>
