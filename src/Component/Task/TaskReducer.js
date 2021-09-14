@@ -3,7 +3,6 @@ taskDatas: [],
 }
 
 export const reducer = function (state = initialState, action) {
-    console.log(action)
     switch (action.type) {
       case "DATA":
         return { 

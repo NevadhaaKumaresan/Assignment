@@ -4,14 +4,12 @@ export function loadData() {
     return function(dispatch) {
       return axios.get("https://jsonplaceholder.typicode.com/todos")
         .then(({ data }) => {
-            console.log(data)
         dispatch(setData(data));
       });
     };
   }
 
 export const setData = (data) => {
-    console.log(data)
   return{
     type:"DATA",
     data
