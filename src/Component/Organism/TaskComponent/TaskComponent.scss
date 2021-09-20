@@ -1,17 +1,19 @@
-$myColor: whitesmoke;
+
 $myDisplay: flex;
+$margPer: 3%;
+$padPer: 1%;
 .taskContainer{
     display: $myDisplay;
   }
   
   .taskBody{
-    margin: 3%;
+    margin: $margPer;
   }
   .taskContainerBorder{
-    border: 2px solid $myColor;
-    padding: 1%;
-    margin-right: 1%;
-    border-radius: 3%;
+    border: 2px solid whitesmoke;
+    padding: $padPer;
+    margin-right: $padPer;
+    border-radius: $margPer;
     height: 450px;
     overflow-y: scroll;
     background-color: aliceblue;
