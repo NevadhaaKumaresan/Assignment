@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="ant-table-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-table"
+      >
+        <div
+          className="ant-table-container"
+        >
+          <div
+            className="ant-table-content"
+            onScroll={[Function]}
+            style={Object {}}
+          >
+            <table
+              style={
+                Object {
+                  "tableLayout": "auto",
+                }
+              }
+            >
+              <colgroup />
+              <thead
+                className="ant-table-thead"
+              >
+                <tr>
+                  <th
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  >
+                    Title
+                  </th>
+                  <th
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  >
+                    Complete
+                  </th>
+                  <th
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  >
+                    Delete
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                className="ant-table-tbody"
+              >
+                <tr
+                  className="ant-table-row ant-table-row-level-0"
+                  data-row-key={1}
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <td
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  >
+                    delectus aut autem
+                  </td>
+                  <td
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  />
+                  <td
+                    className="ant-table-cell"
+                    colSpan={null}
+                    rowSpan={null}
+                    style={Object {}}
+                  />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,30 @@
+$myColor: whitesmoke;
+$myDisplay: flex;
+.taskContainer{
+    display: $myDisplay;
+  }
+  
+  .taskBody{
+    margin: 3%;
+  }
+  .taskContainerBorder{
+    border: 2px solid $myColor;
+    padding: 1%;
+    margin-right: 1%;
+    border-radius: 3%;
+    height: 450px;
+    overflow-y: scroll;
+    background-color: aliceblue;
+  }
+
+  .clickPointer{
+     cursor: pointer
+  }
+
+  .displayHeader{
+    display: $myDisplay
+  }
+  .displayHeaderSize{
+    flex-basis: 50em;
+    font-weight: bold;
+  }
